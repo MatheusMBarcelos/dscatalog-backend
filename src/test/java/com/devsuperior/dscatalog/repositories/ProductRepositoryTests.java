@@ -39,7 +39,7 @@ public class ProductRepositoryTests {
     }
 
     @Test
-    public void findByIdShouldThrowEmptyResultDataAccessAxceptionWhenIdDoesNotExists() {
+    public void findByIdShouldThrowEmptyResultDataAccessExceptionWhenIdDoesNotExists() {
 
         Optional<Product> product = repository.findById(nonExistingId);
         Assertions.assertTrue(product.isEmpty());
